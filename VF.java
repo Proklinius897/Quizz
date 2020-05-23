@@ -22,4 +22,10 @@ public class VF {
     public void setBonnerep(boolean bonnerep) {
         this.bonnerep = bonnerep;
     }
+    @Override
+    public String toString(){
+        return texte+"\n"+"Vrai ou faux?";
+        /*System.out.println(texte+"\n");
+        System.out.println("Vrai ou faux?");*/
+    }
 }
