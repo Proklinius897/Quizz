@@ -25,16 +25,18 @@ public class Qcm {
     public void afficher(){ ///Permet de ne pas afficher la bonne rep en dernier
         System.out.println(this.texte + "\n"); ///afficher question
         int size;///taille de l'arraylist
-
+        ArrayList<String> maj = new ArrayList<>();
         int i=0;
         while(i < 4){ ///On va afficher 4 reponses dont une bonne
             size = randomize.size();///on prends la taille de randomize
             int rand = new Random().nextInt(size);///on génère un entier au hasard (il se situe dans l'index)
             System.out.println("Réponse " + (i+1) +" : "+ randomize.get(rand)); ///on print la réponse
+            maj.add(randomize.get(rand)); ///on met a jour le tableau maj
             randomize.remove(rand);///On enlève ce qui a été print
             i++;
 
         }
+        System.out.println(maj); ///Ce tableau contient les réponse dans l'ordre après qu'elle ai été mélangé par afficher
 
 
 
