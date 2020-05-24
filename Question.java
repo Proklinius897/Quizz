@@ -1,6 +1,6 @@
 public class Question<T> {
     private int numero=0;
-    private String theme; ///CHANGER STRING EN THEME LORSQUE LA CLASSE SERA CREER
+    private String theme; ///CHANGER STRING EN THEME LORSQUE LA CLASSE SERA CREEE
     private int niveau;
     private T type;
 
@@ -14,6 +14,7 @@ public class Question<T> {
 
 
     }
+
 
     public int getNumero() {
         return numero;
